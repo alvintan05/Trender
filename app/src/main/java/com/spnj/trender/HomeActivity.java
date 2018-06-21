@@ -1,9 +1,13 @@
 package com.spnj.trender;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,14 +17,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private static final String TAG = "HomeActivity";
 
     private TextView mTextMessage;
     private Toolbar mToolbar;
+    private DrawerLayout dl;
+    private NavigationView nv;
+    private ActionBarDrawerToggle ab;
 
     private ArrayList<String> mName = new ArrayList<>();
 
@@ -40,6 +48,15 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
 
         initUsername();
+
+        //Mendefinisikan Navigation Drawer
+
+        dl = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ab = new ActionBarDrawerToggle(this, dl, mToolbar, R.string.open, R.string.close);
+        dl.addDrawerListener(ab);
+        ab.syncState();
+        nv = (NavigationView) findViewById(R.id.navigationview);
+        nv.setNavigationItemSelectedListener(this);
 
     }
 
@@ -100,6 +117,32 @@ public class HomeActivity extends AppCompatActivity {
         HomeAdapter adapter = new HomeAdapter(this, mName);
         mrecyclerView.setAdapter(adapter);
         mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.ootd:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.buy:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.dining:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.setting:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.report:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.signout:
+                Toast.makeText(this, "Test", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return true;
     }
 }
 

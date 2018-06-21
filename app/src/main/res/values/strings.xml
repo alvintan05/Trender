@@ -6,4 +6,6 @@
     <string name="title_account">Account</string>
     <string name="home_search">Search</string>
     <string name="test">Test</string>
+    <string name="open">Opened</string>
+    <string name="close">Closed</string>
 </resources>
