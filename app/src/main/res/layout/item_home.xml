@@ -4,16 +4,16 @@
     android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="10dp"
     android:layout_margin="10dp"
-    android:background="#ededed"
-    android:orientation="vertical">
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
         <ImageView
             android:id="@+id/user_image"
@@ -30,15 +30,56 @@
             android:layout_toRightOf="@+id/user_image"
             android:text="cassiemasaangkay"
             android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RateStar"
+            android:layout_width="60dp"
+            android:layout_height="53dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_rate_star"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="3.5"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <ImageView
-        android:layout_marginTop="5dp"
-        android:src="@drawable/contoh_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/contoh_image2" />
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rateScore"
+            android:text="4.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/rateScore"
+            android:text=" / 5.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/ic_more"
+            android:layout_alignParentRight="true"
+            android:id="@+id/moreIcon"
+            android:scaleType="centerCrop"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
 
 
 </LinearLayout>

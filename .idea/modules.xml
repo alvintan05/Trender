@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Trender.iml" filepath="$PROJECT_DIR$/Trender.iml" />
+      <module fileurl="file://D:\Android\Project\Trender\.idea\Trender.iml" filepath="D:\Android\Project\Trender\.idea\Trender.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

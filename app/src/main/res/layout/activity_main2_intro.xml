@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.spnj.trender.Main2Intro"
+    android:background="#ADB0B5"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="WELCOME TO TRENDER"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Post anything you like and don't forget to give a review!"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_rounded"
+            android:text="SIGN IN"
+            android:textColor="#fff"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signIn"
+            android:background="@drawable/white_rounded"
+            android:text="SIGN UP"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_marginLeft="75dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signFB"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signIn"
+        android:layout_marginTop="25dp"
+        android:background="#065ae0"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SIGN IN WITH FACEBOOK"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need Help?"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+
+
+</LinearLayout>
