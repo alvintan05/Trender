@@ -6,4 +6,42 @@
     <string name="title_account">Account</string>
     <string name="home_search">Search</string>
     <string name="test">Test</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <!-- Slide 2 Title and Description -->
+    <string name="slide_2_title">OOTD</string>
+    <string name="slide_2_desc">Share the recent trendiest fashion, write a good review and be a top star!</string>
+
+    <!-- Slide 3 Title and Description -->
+    <string name="slide_3_title">Where To Buy</string>
+    <string name="slide_3_desc">Tell us where you buy your pieces, leave a good review about the place</string>
+
+    <!-- Slide 4 Title and Description -->
+    <string name="slide_4_title">Dining</string>
+    <string name="slide_4_desc">Where you go for lunch? What did you eat for dinner? Snap it! We want to know the ambiance and the review about it.</string>
+
+    <string name="my_preference">"com.abc.com.MyPref"</string>
+    <string name="my_preference_key">"com.abc.com.MyPrefKey"</string>
+
+    <string name="welcome">WELCOME TO TRENDER</string>
+    <string name="welcome_desc">Post anything you like and dont forget to give a review!</string>
+
+    <string name="signIn">SIGN IN</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="signFB">SIGN IN WITH FACEBOOK</string>
+    <string name="help">Need Help?</string>
+
+    <string name="username">username</string>
+    <string name="pass">password</string>
+    <string name="check_remember">Remember Me</string>
+
+    <string name="email">e-mail</string>
+    <string name="re_password">re-password</string>
+    <string name="create_an_acc">CREATE AN ACCOUNT</string>
+    <string name="full_name">full name</string>
+    <string name="already_have_an_acc">Already have an account? click here to sign in</string>
+    <string name="don_t_have_an_acc">Don\'t have an account? click here</string>
+    <string name="sign_FB">SIGN IN WITH FACEBOOK</string>
 </resources>
