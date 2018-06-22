@@ -1,101 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.spnj.trender.SignIn"
     android:background="#000"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    tools:context="com.spnj.trender.SignIn">
 
     <ImageView
+        android:id="@+id/bgsignin"
         android:layout_width="match_parent"
         android:layout_height="330dp"
-        android:src="@drawable/bgsignin"
-        android:id="@+id/bgsignin"/>
+        android:src="@drawable/bgsignin" />
 
     <TextView
+        android:id="@+id/signIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signIn"
+        android:layout_marginTop="90sp"
+        android:gravity="center_horizontal"
         android:text="@string/signIn"
         android:textColor="#fff"
-        android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginTop="90sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_below="@id/signIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/username"
-        android:textColorHint="#fff"
-        android:gravity="center"
-        android:background="@drawable/transparent_grey"
-        android:layout_marginTop="70dp"
+        android:layout_below="@id/signIn"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/transparent_grey"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:textColorHint="#fff" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:background="#6c6c6c" />
+
 
     <EditText
         android:id="@+id/txtPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_name"
-        android:hint="@string/pass"
-        android:textColorHint="#fff"
-        android:gravity="center"
-        android:background="@drawable/transparent_grey"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_grey"
+        android:gravity="center"
+        android:hint="@string/pass"
+        android:textColorHint="#fff" />
 
- <CheckBox
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:id="@+id/checkRemember"
-     android:layout_marginTop="12dp"
-     android:text="@string/check_remember"
-     android:textSize="13sp"
-     android:textColor="#fff"
-     android:layout_marginLeft="60dp"
-     android:layout_below="@id/txtPass"
-     app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintHorizontal_bias="0.04"
-     app:layout_constraintLeft_toLeftOf="parent"
-     app:layout_constraintRight_toRightOf="parent"
-     app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toBottomOf="@id/txtPass"/>
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtPass"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:background="#6c6c6c" />
+
+    <CheckBox
+        android:id="@+id/checkRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPass"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/check_remember"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPass" />
 
 
     <Button
+        android:id="@+id/btn_signIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_signIn"
-        android:background="@drawable/white_rounded"
-        android:text="@string/signIn"
+        android:layout_below="@id/checkRemember"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_below="@id/checkRemember"
         android:layout_marginTop="15dp"
-        />
+        android:background="@drawable/white_rounded"
+        android:text="@string/signIn" />
 
     <Button
         android:id="@+id/signFB"
         android:layout_width="297dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_signIn"
-        android:layout_marginTop="85dp"
-        android:background="#065ae0"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
+        android:layout_marginTop="85dp"
+        android:background="#065ae0"
         android:padding="10dp"
         android:text="@string/sign_FB"
         android:textColor="#fff"
-        android:textSize="15dp"
-        android:layout_centerHorizontal="true"/>
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"

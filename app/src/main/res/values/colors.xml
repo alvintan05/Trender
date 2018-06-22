@@ -9,5 +9,33 @@
     <color name="ActiveDots">#fffafa</color>
     <color name="InactiveDots">#83878b</color>
 
+    <!-- dots inactive colors-->
+    <color name="dot_dark_screen1">#a9a9a9</color>
+    <color name="dot_dark_screen2">#a9a9a9</color>
+    <color name="dot_dark_screen3">#a9a9a9</color>
+    <color name="dot_dark_screen4">#a9a9a9</color>
+    <color name="dot_dark_foodsy">#a9a9a9</color>
+
+    <!-- dots active colors-->
+    <color name="dot_light_screen1">#83878b</color>
+    <color name="dot_light_screen2">#83878b</color>
+    <color name="dot_light_screen3">#83878b</color>
+    <color name="dot_light_screen4">#83878b</color>
+    <color name="dot_light_foodsy">#83878b</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_foodsy</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_foodsy</item>
+    </array>
+
      
 </resources>

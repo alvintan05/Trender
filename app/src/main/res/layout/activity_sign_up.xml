@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.spnj.trender.SignIn"
     android:background="#fff"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    tools:context="com.spnj.trender.SignIn">
 
     <ImageView
         android:id="@+id/bgsignup"
@@ -21,84 +20,120 @@
 
 
     <TextView
+        android:id="@+id/createAcc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/createAcc"
+        android:layout_marginTop="90sp"
+        android:gravity="center_horizontal"
         android:text="@string/create_an_acc"
         android:textColor="#fff"
-        android:gravity="center_horizontal"
         android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginTop="90sp"/>
-
-
-
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/fullname"
-        android:layout_below="@id/createAcc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/full_name"
-        android:textColorHint="#000"
-        android:gravity="center"
-        android:background="@drawable/transparent_white"
-        android:layout_marginTop="70dp"
+        android:layout_below="@id/createAcc"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/transparent_white"
+        android:gravity="center"
+        android:hint="@string/full_name"
+        android:textColorHint="#6b6b6b" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fullname"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="3dp"
+        android:background="#000" />
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_below="@id/fullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/username"
-        android:textColorHint="#000"
-        android:gravity="center"
-        android:background="@drawable/transparent_white"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/fullname"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_white"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:textColorHint="#6b6b6b" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="3dp"
+        android:background="#000" />
 
     <EditText
         android:id="@+id/txtPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_name"
-        android:hint="@string/pass"
-        android:textColorHint="#000"
-        android:gravity="center"
-        android:background="@drawable/transparent_white"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_white"
+        android:gravity="center"
+        android:hint="@string/pass"
+        android:textColorHint="#6b6b6b" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtPass"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="3dp"
+        android:background="#000" />
 
     <EditText
         android:id="@+id/txtRePass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtPass"
-        android:hint="@string/re_password"
-        android:textColorHint="#000"
-        android:gravity="center"
-        android:background="@drawable/transparent_white"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_white"
+        android:gravity="center"
+        android:hint="@string/re_password"
+        android:textColorHint="#6b6b6b" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txtRePass"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="3dp"
+        android:background="#000" />
 
 
     <Button
+        android:id="@+id/btn_createAcc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_createAcc"
-        android:background="@drawable/black_rounded"
-        android:text="@string/create_an_acc"
-        android:textColor="#fff"
+        android:layout_below="@id/txtRePass"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
-        android:layout_below="@id/txtRePass"
         android:layout_marginTop="15dp"
-        />
+        android:background="@drawable/black_rounded"
+        android:text="@string/create_an_acc"
+        android:textColor="#fff" />
 
 
     <TextView
@@ -106,6 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:gravity="center"

@@ -15,9 +15,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@mipmap/baseline_local_dining_black_24"
-            android:layout_centerHorizontal="true"
             android:scaleType="centerCrop"
-            android:layout_marginTop="150dp"
             android:id="@+id/img"/>
 
         <TextView
