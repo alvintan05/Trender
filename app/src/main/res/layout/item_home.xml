@@ -32,15 +32,15 @@
             android:textSize="16sp" />
 
         <!--<TextView-->
-            <!--android:id="@+id/RateStar"-->
-            <!--android:layout_width="60dp"-->
-            <!--android:layout_height="53dp"-->
-            <!--android:layout_alignParentEnd="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:background="@drawable/ic_rate_star"-->
-            <!--android:gravity="center_vertical|center_horizontal"-->
-            <!--android:text="3.5"-->
-            <!--android:textStyle="bold" />-->
+        <!--android:id="@+id/RateStar"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="53dp"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/ic_rate_star"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:text="3.5"-->
+        <!--android:textStyle="bold" />-->
 
     </RelativeLayout>
 
@@ -56,29 +56,30 @@
         android:src="@drawable/contoh_image2" />
 
     <RelativeLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:id="@+id/rateScore"
-            android:text="4.2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="4.2" />
+
         <TextView
-            android:layout_toRightOf="@+id/rateScore"
-            android:text=" / 5.0"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rateScore"
+            android:text=" / 5.0" />
 
         <ImageView
-            app:srcCompat="@drawable/ic_more"
-            android:layout_alignParentRight="true"
             android:id="@+id/moreIcon"
-            android:scaleType="centerCrop"
             android:layout_width="35dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_more" />
 
     </RelativeLayout>
 

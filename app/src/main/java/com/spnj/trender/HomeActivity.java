@@ -1,10 +1,12 @@
 package com.spnj.trender;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -43,11 +45,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         //
 
-        //mendefinisikan toolbar
+//        //mendefinisikan toolbar
         mToolbar = (Toolbar) findViewById(R.id.tb);
         setSupportActionBar(mToolbar);
-
-        initUsername();
 
         //Mendefinisikan Navigation Drawer
 
@@ -58,6 +58,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         nv = (NavigationView) findViewById(R.id.navigationview);
         nv.setNavigationItemSelectedListener(this);
 
+        HomeFragment fragment = new HomeFragment();
+        FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction1.replace(R.id.fragment_container, fragment, "Home Fragment");
+        fragmentTransaction1.commit();
+
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -67,57 +72,25 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                    HomeFragment fragment = new HomeFragment();
+                    FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction1.replace(R.id.fragment_container, fragment, "Home Fragment");
+                    fragmentTransaction1.commit();
                     return true;
                 case R.id.navigation_add:
                     mTextMessage.setText(R.string.title_add);
                     return true;
                 case R.id.navigation_account:
-                    mTextMessage.setText(R.string.title_account);
+                    ProfileFragment fragment2 = new ProfileFragment();
+                    FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction2.replace(R.id.fragment_container, fragment2, "Profile Fragment");
+                    fragmentTransaction2.commit();
                     return true;
             }
             return false;
         }
     };
 
-    //membuat option menu dengan menu inflater
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.home_option, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.home_search:
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void initUsername(){
-        Log.d(TAG, "initUsername: preparing username");
-
-        mName.add("Alvin");
-        mName.add("Azka");
-        mName.add("Savira");
-        mName.add("Hanas");
-        mName.add("Raihan");
-        mName.add("Budi");
-        mName.add("Umam");
-
-        initRecyclerView();
-    }
-
-    private void initRecyclerView(){
-        Log.d(TAG, "initRecyclerView: init recyclerview");
-        RecyclerView mrecyclerView = findViewById(R.id.home_recycler);
-        HomeAdapter adapter = new HomeAdapter(this, mName);
-        mrecyclerView.setAdapter(adapter);
-        mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
