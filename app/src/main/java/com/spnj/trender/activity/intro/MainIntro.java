@@ -1,4 +1,4 @@
-package com.spnj.trender;
+package com.spnj.trender.activity.intro;
 
         import android.content.Context;
         import android.content.Intent;
@@ -17,6 +17,8 @@ package com.spnj.trender;
         import android.widget.Button;
         import android.widget.LinearLayout;
         import android.widget.TextView;
+
+        import com.spnj.trender.R;
 
 public class MainIntro extends AppCompatActivity {
 

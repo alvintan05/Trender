@@ -1,4 +1,4 @@
-package com.spnj.trender;
+package com.spnj.trender.activity.intro;
 
 import android.content.Context;
 import android.content.SharedPreferences;

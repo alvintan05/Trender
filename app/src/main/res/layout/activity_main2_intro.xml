@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.spnj.trender.Main2Intro">
+    tools:context="com.spnj.trender.activity.intro.Main2Intro">
 
     <TextView
         android:layout_width="wrap_content"

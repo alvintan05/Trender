@@ -1,10 +1,14 @@
-package com.spnj.trender;
+package com.spnj.trender.activity.intro;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.spnj.trender.R;
+import com.spnj.trender.activity.SignIn;
+import com.spnj.trender.activity.SignUp;
 
 public class Main2Intro extends AppCompatActivity {
 

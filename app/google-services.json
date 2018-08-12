@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "403579156023",
+    "firebase_url": "https://trender-138d7.firebaseio.com",
+    "project_id": "trender-138d7",
+    "storage_bucket": "trender-138d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403579156023:android:b9441843fc33ab56",
+        "android_client_info": {
+          "package_name": "com.spnj.trender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403579156023-bp0l109qeg1tv3v4ultadbrttaju34s0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spnj.trender",
+            "certificate_hash": "26ba94cf7f3b944fe4b4258206607cbd07132652"
+          }
+        },
+        {
+          "client_id": "403579156023-mlqg935i2l0dmqgr87tdc3dtej3avmge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNfasJy-rWQr5vWJtdVHdOQqXX_HV2e5g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403579156023-mlqg935i2l0dmqgr87tdc3dtej3avmge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

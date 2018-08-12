@@ -1,4 +1,4 @@
-package com.spnj.trender;
+package com.spnj.trender.adapter;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.spnj.trender.R;
 
 import java.util.ArrayList;
 

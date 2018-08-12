@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -45,6 +46,7 @@
     </RelativeLayout>
 
     <ImageView
+        android:id="@+id/post_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -52,7 +54,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="5dp"
         android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
         android:src="@drawable/contoh_image2" />
 
     <RelativeLayout
@@ -83,5 +84,12 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:text="Ini Deskripsi" />
 
 </LinearLayout>

@@ -1,25 +1,25 @@
-package com.spnj.trender;
+package com.spnj.trender.activity;
 
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.spnj.trender.fragment.HomeFragment;
+import com.spnj.trender.fragment.ProfileFragment;
+import com.spnj.trender.R;
 
 import java.util.ArrayList;
 
@@ -31,6 +31,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout dl;
     private NavigationView nv;
     private ActionBarDrawerToggle ab;
+    private FloatingActionButton addPost;
 
     private ArrayList<String> mName = new ArrayList<>();
 
@@ -57,6 +58,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         ab.syncState();
         nv = (NavigationView) findViewById(R.id.navigationview);
         nv.setNavigationItemSelectedListener(this);
+
+        addPost = (FloatingActionButton) findViewById(R.id.add_post);
+        addPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, AddPostActivity.class));
+            }
+        });
 
         HomeFragment fragment = new HomeFragment();
         FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();

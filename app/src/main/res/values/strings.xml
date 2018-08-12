@@ -35,19 +35,20 @@
     <string name="signFB">SIGN IN WITH FACEBOOK</string>
     <string name="help">Need Help?</string>
 
-    <string name="username">username</string>
-    <string name="pass">password</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
     <string name="check_remember">Remember Me</string>
 
-    <string name="email">e-mail</string>
-    <string name="re_password">re-password</string>
+    <string name="email">Email</string>
+    <string name="re_password">Re-password</string>
     <string name="create_an_acc">CREATE AN ACCOUNT</string>
-    <string name="full_name">full name</string>
+    <string name="full_name">Full name</string>
     <string name="already_have_an_acc">Already have an account? click here to sign in</string>
     <string name="don_t_have_an_acc">Don\'t have an account? click here</string>
     <string name="sign_FB">SIGN IN WITH FACEBOOK</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_post">Add Post</string>
 
 </resources>

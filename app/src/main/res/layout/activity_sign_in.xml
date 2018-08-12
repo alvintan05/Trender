@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:background="#000"
     android:gravity="center_horizontal"
-    tools:context="com.spnj.trender.SignIn">
+    tools:context="com.spnj.trender.activity.SignIn">
 
     <ImageView
         android:id="@+id/bgsignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:adjustViewBounds="true"
         android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         android:src="@drawable/bgsignin" />
 
     <TextView
@@ -28,108 +28,123 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/user_name"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signIn"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="70dp"
-        android:inputType="text"
-        android:background="@drawable/transparent_grey"
-        android:gravity="center"
-        android:hint="@string/username"
-        android:textColorHint="#fff" />
+        android:layout_below="@id/signIn">
 
-    <View
-        android:id="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@+id/user_name"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="5dp"
-        android:background="#6c6c6c" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/transparent_grey"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/white"
+                android:textColorHint="#fff" />
 
-    <EditText
-        android:id="@+id/txtPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user_name"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/transparent_grey"
-        android:gravity="center"
-        android:inputType="textPassword"
-        android:hint="@string/pass"
-        android:textColorHint="#fff" />
-
-    <View
-        android:id="@+id/line2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@+id/txtPass"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="5dp"
-        android:background="#6c6c6c" />
-
-    <CheckBox
-        android:id="@+id/checkRemember"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtPass"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/check_remember"
-        android:textColor="#fff"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtPass" />
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/login_email"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#6c6c6c" />
 
 
-    <Button
-        android:id="@+id/btn_signIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/checkRemember"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/white_rounded"
-        android:text="@string/signIn" />
+            <EditText
+                android:id="@+id/login_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_email"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparent_grey"
+                android:gravity="center"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="#fff" />
 
-    <Button
-        android:id="@+id/signFB"
-        android:layout_width="297dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_signIn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginTop="55dp"
-        android:background="#065ae0"
-        android:padding="10dp"
-        android:text="@string/sign_FB"
-        android:textColor="#fff"
-        android:textSize="15sp" />
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/login_pass"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:background="#6c6c6c" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/don_t_have_an_acc"
-        android:textColor="#fff"
-        android:textSize="15sp" />
+            <CheckBox
+                android:id="@+id/checkRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_pass"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/check_remember"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPass" />
+
+
+            <Button
+                android:id="@+id/btn_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkRemember"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_rounded"
+                android:text="@string/signIn" />
+
+            <Button
+                android:id="@+id/signFB"
+                android:layout_width="297dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_signIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="55dp"
+                android:background="#065ae0"
+                android:padding="10dp"
+                android:text="@string/sign_FB"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signFB"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/don_t_have_an_acc"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
